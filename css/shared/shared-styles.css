@@ -14,7 +14,12 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  height: 50px;
+  height: 100px;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
 }
 
 header > nav {
@@ -22,14 +27,15 @@ header > nav {
   display: flex;
   align-items: flex-end;
 }
+header > h1 {
+  text-align: left;
+}
 
 h1 {
-  display: block;
   width: 100%;
   color: var(--cor-golden-200);
   font-size: 1.8em;
   font-weight: 300;
-  text-align: left;
   text-transform: uppercase;
 }
 
@@ -54,10 +60,7 @@ a {
   display: none;
 }
 
-@media (max-width: 650px) {
-  h1 {
-    font-size: 1em;
-  }
+@media (max-width: 620px) {
   header > nav {
     display: none;
   }
@@ -69,6 +72,11 @@ a {
     text-decoration: none;
   }
 }
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1em;
+  }
+}
 
 #navbar-container {
   display: flex;
@@ -77,8 +85,6 @@ a {
   width: 100%;
   height: 100%;
   gap: 10px;
-  /* margin-bottom: 10px; */
-  padding: 0;
 }
 
 .navbar-items {
@@ -89,19 +95,15 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .navbar-items:hover {
-    border-radius: 2px;
-    list-style: none;
-    display: flex;
-    width: 75px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--cor-gray-200-t);
-  }
-.navbar-items > a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+  background-color: var(--cor-gray-200-t);
+}
+
+.navbar-items > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
