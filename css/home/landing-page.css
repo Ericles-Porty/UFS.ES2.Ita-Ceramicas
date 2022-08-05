@@ -12,3 +12,6 @@
     border: var(--cor-gray-200-t) solid 1px;
     border-radius: 5px;
 }
+.container-piso:hover{
+    background-color: var(--cor-gray-200-t);
+}
