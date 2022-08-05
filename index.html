@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7febf00822.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Ita Cerâmicas</title>
   </head>
 
@@ -15,15 +19,25 @@
         alt="Logo da ita cerâmicas since 2022"
       />
       <h1>Ita Cerâmicas</h1>
-
       <nav>
-        <ul>
-          <li><a href="#header" target="" rel="">Home</a></li>
-          <li><a href="#section-pisos" target="" rel="">Produtos</a></li>
-          <li><a href="#sobre" target="" rel="">Sobre</a></li>
-          <li><a href="#footer" target="" rel="">Contato</a></li>
+        <ul id="navbar-container">
+          <li class="navbar-items">
+            <a href="#header" target="" rel="">Home</a>
+          </li>
+          <li class="navbar-items">
+            <a href="#section-pisos" target="" rel="">Produtos</a>
+          </li>
+          <li class="navbar-items">
+            <a href="#sobre" target="" rel="">Sobre</a>
+          </li>
+          <li class="navbar-items" >
+            <a href="#footer" target="" rel="">Contato</a>
+          </li>
         </ul>
       </nav>
+      <a class="hamburger-nav" href="">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </header>
 
     <hr />
@@ -84,7 +98,10 @@
         <section class="section-pisos">
           <h2>Pisos Mármore</h2>
           <div class="grid-section-pisos">
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-atlantico.html">
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-atlantico.html"
+            >
               <h3>Piso Mármore Atlântico</h3>
               <img src="./img/pisos/piso-marmore-atlantico.jpg" alt="" />
               <div>
@@ -94,7 +111,10 @@
               </div>
             </a>
 
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-charleston.html">
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-charleston.html"
+            >
               <h3>Piso Mármore Charleston</h3>
               <img src="./img/pisos/piso-marmore-charleston.jpg" alt="" />
               <p><s>R$ 199,99</s></p>
@@ -102,7 +122,10 @@
               <p>No pix</p>
             </a>
 
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-michelangelo.html">
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-michelangelo.html"
+            >
               <h3>Piso Mármore Michelangelo</h3>
               <img src="./img/pisos/piso-marmore-michelangelo.jpg" alt="" />
               <p><s>R$ 199,99</s></p>
@@ -110,7 +133,10 @@
               <p>No pix</p>
             </a>
 
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-mont-blanc-caramel.html">
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-mont-blanc-caramel.html"
+            >
               <h3>Piso Mármore Mont Blanc Caramel</h3>
               <img
                 src="./img/pisos/piso-marmore-mont-blanc-caramel.jpg"
@@ -127,17 +153,22 @@
 
     <hr />
 
+    <a href="pages/forms/comments.html">
+      <button>Deixe um comentário</button>
+    </a>
+
+    <hr />
     <section id="sobre">
       <p>
         Somos uma empresa que vende pisos cerâmicos de luxo, venha nos conhecer
       </p>
     </section>
-
-    <hr />
-
-    <footer id="footer">
-      <p>Todos os direitos reservados</p>
-      <p>&copy;Ita Cerâmicas - 2022</p>
-    </footer>
   </body>
+
+  <hr />
+
+  <footer id="footer">
+    <p>Todos os direitos reservados</p>
+    <p>&copy;Ita Cerâmicas - 2022</p>
+  </footer>
 </html>
