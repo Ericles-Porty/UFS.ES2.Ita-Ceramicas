@@ -1,0 +1,14 @@
+.grid-section-pisos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container-piso{
+    padding: 10px;
+    margin: 10px;
+    border: var(--cor-gray-200-t) solid 1px;
+    border-radius: 5px;
+}

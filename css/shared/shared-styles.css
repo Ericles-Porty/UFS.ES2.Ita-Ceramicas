@@ -72,7 +72,7 @@ a {
     text-decoration: none;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   h1 {
     font-size: 1em;
   }
