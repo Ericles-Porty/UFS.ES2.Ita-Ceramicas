@@ -17,10 +17,9 @@ header {
   height: 100px;
 }
 
-#logo {
-  width: 100px;
-  height: auto;
-  background-color: var(--cor-gray-300);
+#logo{
+    width: 100px;
+    height: auto;
 }
 
 header > nav {
@@ -38,8 +37,6 @@ h1 {
   font-size: 1.8em;
   font-weight: 300;
   text-transform: uppercase;
-  background-color: var(--cor-gray-300);
-  /* alterar o bg-color */
 }
 
 h2 {
@@ -60,11 +57,7 @@ a {
   text-decoration: none;
 }
 .hamburger-nav {
-  background-color: var(--cor-gray-300);
   display: none;
-}
-.hamburger-nav>i{
-  background-color: var(--cor-gray-300);
 }
 
 @media (max-width: 620px) {
@@ -92,7 +85,6 @@ a {
   width: 100%;
   height: 100%;
   gap: 10px;
-  background-color: var(--cor-gray-300);
 }
 
 .navbar-items {
@@ -114,5 +106,4 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: var(--cor-gray-300);
 }
