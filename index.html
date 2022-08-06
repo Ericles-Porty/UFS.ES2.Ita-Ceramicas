@@ -20,6 +20,12 @@
         alt="Logo da ita cerâmicas since 2022"
       />
       <h1>Ita Cerâmicas</h1>
+      <div id="search-bar">
+        <input type="text" name="search" id="search" placeholder="Pesquisar" />
+        <a id="search-button" href="">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
       <nav>
         <ul id="navbar-container">
           <li class="navbar-items">
@@ -40,8 +46,6 @@
         <i class="fa-solid fa-bars"></i>
       </a>
     </header>
-
-    <hr />
 
     <main>
       <section id="section-pisos">
@@ -160,21 +164,34 @@
       </section>
     </main>
 
-    <hr />
+    <form
+      id="form-comments"
+      action="mailto:ericlesdsantos@gmail.com"
+      method="POST"
+      name="EmailForm"
+    >
+      <div class="form-block">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" />
+      </div>
 
-    <a href="pages/forms/comments.html">
-      <button>Deixe um comentário</button>
-    </a>
+      <div class="form-block">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
 
-    <hr />
+      <div class="form-block">
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" id="submit-button">Enviar</button>
+    </form>
+
     <section id="sobre">
-      <p>
-        Somos uma empresa que vende pisos cerâmicos de luxo, venha nos conhecer
-      </p>
+      <p>Somos uma empresa que vende pisos cerâmicos de luxo</p>
+      <p>Venha nos conhecer</p>
     </section>
   </body>
-
-  <hr />
 
   <footer id="footer">
     <p>Todos os direitos reservados</p>

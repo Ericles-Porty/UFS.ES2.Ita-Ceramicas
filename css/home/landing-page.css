@@ -5,6 +5,7 @@
   gap: 20px;
   text-align: center;
   flex-wrap: wrap;
+  margin: 10px;
 }
 .container-piso {
   padding: 10px;
@@ -14,7 +15,7 @@
 }
 
 .container-piso:hover {
-  background-color: var(--cor-gray-900);
+  background-color: var(--cor-gray-900-t);
 }
 
 .container-piso:hover .button-comprar {
@@ -24,6 +25,52 @@
 .button-comprar {
   visibility: hidden;
   border: var(--cor-golden-300) solid 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  color: var(--cor-gray-300);
+  font-size: 1.2em;
+}
+
+#form-comments {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--cor-gray-300);
+  color: var(--cor-golen-200);
+}
+
+.form-block > #name,
+#email,
+#message {
+  width: 30vw;
+}
+
+.form-block {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: var(--cor-golden-200) solid 1px;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+label {
+  color: var(--cor-golden-200);
+}
+
+input, textarea{
+  color:var(--cor-golden-200);
+  padding: 10px;
+  border: none;
+  background-color: var(--cor-gray-900-t);
+  border-radius: 2px;
+}
+
+#submit-button{
+  border: var(--cor-golden-200) solid 4px;
   padding: 5px 20px;
   cursor: pointer;
   color: var(--cor-gray-300);
