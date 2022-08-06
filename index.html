@@ -169,37 +169,41 @@
       </section>
     </main>
 
-    <form
-      id="form-comments"
-      action="mailto:ericlesdsantos@gmail.com"
-      method="POST"
-      name="EmailForm"
-    >
-      <div class="form-block">
-        <label for="name">Nome:</label>
-        <input type="text" name="name" id="name" />
-      </div>
+    <footer id="footer">
+      <a href="#header" id="scroll-up-button">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+      </a>
+      <form
+        id="form-comments"
+        action="mailto:ericlesdsantos@gmail.com"
+        method="POST"
+        name="EmailForm"
+      >
+        <div class="form-block">
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" />
+        </div>
 
-      <div class="form-block">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" />
-      </div>
+        <div class="form-block">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
 
-      <div class="form-block">
-        <label for="message">Mensagem:</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-      </div>
-      <button type="submit" id="submit-button">Enviar</button>
-    </form>
+        <div class="form-block">
+          <label for="message">Mensagem:</label>
+          <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+        </div>
+        <button type="submit" id="submit-button">Enviar</button>
+      </form>
 
-    <!-- <section id="sobre">
-      <p>Somos uma empresa que vende pisos cerâmicos de luxo</p>
-      <p>Venha nos conhecer</p>
-    </section> -->
+      <p>Todos os direitos reservados</p>
+      <p>&copy;Ita Cerâmicas - 2022</p>
+    </footer>
   </body>
-
-  <footer id="footer">
-    <p>Todos os direitos reservados</p>
-    <p>&copy;Ita Cerâmicas - 2022</p>
-  </footer>
 </html>

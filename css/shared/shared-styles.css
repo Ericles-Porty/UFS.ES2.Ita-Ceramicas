@@ -153,3 +153,18 @@ a {
 #sobre {
   background-color: var(--color-gray);
 }
+
+#scroll-up-button {
+  transform: translate(40vw, -20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-golden);
+  color: var(--color-gray);
+  font-size: 2.75em;
+  font-weight: lighter;
+  cursor: pointer;
+}
