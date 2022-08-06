@@ -10,12 +10,12 @@
 .container-piso {
   padding: 10px;
   margin: 10px;
-  border: var(--cor-gray-200-t) solid 1px;
+  border: var(--color-dark-gray-t) solid 1px;
   border-radius: 5px;
 }
 
 .container-piso:hover {
-  background-color: var(--cor-gray-900-t);
+  background-color: var(--color-light-gray);
 }
 
 .container-piso:hover .button-comprar {
@@ -24,10 +24,10 @@
 
 .button-comprar {
   visibility: hidden;
-  border: var(--cor-golden-300) solid 5px;
+  border: var(--color-dark-gray) solid 2px;
   padding: 5px 20px;
   cursor: pointer;
-  color: var(--cor-gray-300);
+  color: var(--color-gray);
   font-size: 1.2em;
 }
 
@@ -38,8 +38,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: var(--cor-gray-300);
-  color: var(--cor-golen-200);
+  background-color: var(--color-gray);
+  color: var(--color-golden);
 }
 
 .form-block > #name,
@@ -52,27 +52,34 @@
   margin: 10px;
   display: flex;
   flex-direction: column;
-  border: var(--cor-golden-200) solid 1px;
+  border: var(--color-golden) solid 1px;
   border-radius: 2px;
   padding: 5px;
 }
 
 label {
-  color: var(--cor-golden-200);
+  color: var(--color-golden);
 }
 
-input, textarea{
-  color:var(--cor-golden-200);
+input,
+textarea {
+  color: var(--color-golden);
   padding: 10px;
   border: none;
-  background-color: var(--cor-gray-900-t);
+  background-color: var(--color-light-gray);
   border-radius: 2px;
 }
 
-#submit-button{
-  border: var(--cor-golden-200) solid 4px;
+#submit-button {
+  border: var(--color-golden) solid 4px;
   padding: 5px 20px;
   cursor: pointer;
-  color: var(--cor-gray-300);
+  color: var(--color-golden);
   font-size: 1.2em;
+  background-color: var(--color-dark-gray);
+  border-radius: 2px;
+}
+
+#submit-button:hover {
+  background-color: var(--color-gray);
 }
