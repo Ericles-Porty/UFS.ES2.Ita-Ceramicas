@@ -46,6 +46,7 @@
 #email,
 #message {
   width: 30vw;
+  margin: 6px 0;
 }
 
 .form-block {
@@ -71,7 +72,7 @@ textarea {
 }
 
 #submit-button {
-  border: var(--color-golden) solid 4px;
+  border: var(--color-golden) solid 3px;
   padding: 5px 20px;
   cursor: pointer;
   color: var(--color-golden);
