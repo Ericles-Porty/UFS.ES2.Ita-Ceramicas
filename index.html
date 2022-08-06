@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link
+      rel="shortcut icon"
+      href="img/logos/logo-bg-azul.png"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7febf00822.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Ita Cerâmicas</title>
   </head>
 
   <body>
     <header id="header">
       <img
+        id="logo"
         src="./img/logos/logo-transparent.png"
         alt="Logo da ita cerâmicas since 2022"
       />
       <h1>Ita Cerâmicas</h1>
-
+      <div id="search-bar">
+        <input type="text" name="search" id="search" placeholder="Pesquisar" />
+        <a id="search-button" href="">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="#header" target="" rel="">Home</a></li>
-          <li><a href="#section-pisos" target="" rel="">Produtos</a></li>
-          <li><a href="#sobre" target="" rel="">Sobre</a></li>
-          <li><a href="#footer" target="" rel="">Contato</a></li>
+        <ul id="navbar-container">
+          <li class="navbar-items">
+            <a href="#header" target="" rel="">Home</a>
+          </li>
+          <li class="navbar-items">
+            <a href="#section-pisos" target="" rel="">Produtos</a>
+          </li>
+          <li class="navbar-items">
+            <a href="#sobre" target="" rel="">Sobre</a>
+          </li>
+          <li class="navbar-items">
+            <a href="#footer" target="" rel="">Contato</a>
+          </li>
         </ul>
       </nav>
+      <a class="hamburger-nav" href="">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </header>
-
-    <hr />
 
     <main>
       <section id="section-pisos">
@@ -36,12 +60,13 @@
             class="container-piso"
             href="pages/pisos/filos/piso-filo-bege.html"
           >
-            <h3>Piso Filo Bege</h3>
+            <h3>Bege</h3>
             <img src="./img/pisos/piso-filo-bege.jpg" alt="" />
             <div>
               <p><s>R$ 199,99</s></p>
               <p>R$ 149,99</p>
               <p>No pix</p>
+              <button class="button-comprar">Comprar</button>
             </div>
           </a>
 
@@ -49,33 +74,36 @@
             class="container-piso"
             href="pages/pisos/filos/piso-filo-branco.html"
           >
-            <h3>Piso Filo Branco</h3>
+            <h3>Branco</h3>
             <img src="./img/pisos/piso-filo-branco.jpg" alt="" />
             <p><s>R$ 199,99</s></p>
             <p>R$ 149,99</p>
             <p>No pix</p>
+            <button class="button-comprar">Comprar</button>
           </a>
 
           <a
             class="container-piso"
             href="pages/pisos/filos/piso-filo-gamma.html"
           >
-            <h3>Piso Filo Gamma</h3>
+            <h3>Gamma</h3>
             <img src="./img/pisos/piso-filo-gamma.jpg" alt="" />
             <p><s>R$ 199,99</s></p>
             <p>R$ 149,99</p>
             <p>No pix</p>
+            <button class="button-comprar">Comprar</button>
           </a>
 
           <a
             class="container-piso"
             href="pages/pisos/filos/piso-filo-greicce.html"
           >
-            <h3>Piso Filo Greicce</h3>
+            <h3>Greicce</h3>
             <img src="./img/pisos/piso-filo-greicce.jpg" alt="" />
             <p><s>R$ 199,99</s></p>
             <p>R$ 149,99</p>
             <p>No pix</p>
+            <button class="button-comprar">Comprar</button>
           </a>
         </div>
 
@@ -84,34 +112,49 @@
         <section class="section-pisos">
           <h2>Pisos Mármore</h2>
           <div class="grid-section-pisos">
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-atlantico.html">
-              <h3>Piso Mármore Atlântico</h3>
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-atlantico.html"
+            >
+              <h3>Atlântico</h3>
               <img src="./img/pisos/piso-marmore-atlantico.jpg" alt="" />
               <div>
                 <p><s>R$ 199,99</s></p>
                 <p>R$ 149,99</p>
                 <p>No pix</p>
+                <button class="button-comprar">Comprar</button>
               </div>
             </a>
 
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-charleston.html">
-              <h3>Piso Mármore Charleston</h3>
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-charleston.html"
+            >
+              <h3>Charleston</h3>
               <img src="./img/pisos/piso-marmore-charleston.jpg" alt="" />
               <p><s>R$ 199,99</s></p>
               <p>R$ 149,99</p>
               <p>No pix</p>
+              <button class="button-comprar">Comprar</button>
             </a>
 
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-michelangelo.html">
-              <h3>Piso Mármore Michelangelo</h3>
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-michelangelo.html"
+            >
+              <h3>Michelangelo</h3>
               <img src="./img/pisos/piso-marmore-michelangelo.jpg" alt="" />
               <p><s>R$ 199,99</s></p>
               <p>R$ 149,99</p>
               <p>No pix</p>
+              <button class="button-comprar">Comprar</button>
             </a>
 
-            <a class="container-piso" href="pages/pisos/marmores/piso-marmore-mont-blanc-caramel.html">
-              <h3>Piso Mármore Mont Blanc Caramel</h3>
+            <a
+              class="container-piso"
+              href="pages/pisos/marmores/piso-marmore-mont-blanc-caramel.html"
+            >
+              <h3>Mont Blanc Caramel</h3>
               <img
                 src="./img/pisos/piso-marmore-mont-blanc-caramel.jpg"
                 alt=""
@@ -119,25 +162,44 @@
               <p><s>R$ 199,99</s></p>
               <p>R$ 149,99</p>
               <p>No pix</p>
+              <button class="button-comprar">Comprar</button>
             </a>
           </div>
         </section>
       </section>
     </main>
 
-    <hr />
+    <form
+      id="form-comments"
+      action="mailto:ericlesdsantos@gmail.com"
+      method="POST"
+      name="EmailForm"
+    >
+      <div class="form-block">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" />
+      </div>
 
-    <section id="sobre">
-      <p>
-        Somos uma empresa que vende pisos cerâmicos de luxo, venha nos conhecer
-      </p>
-    </section>
+      <div class="form-block">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" />
+      </div>
 
-    <hr />
+      <div class="form-block">
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" id="submit-button">Enviar</button>
+    </form>
 
-    <footer id="footer">
-      <p>Todos os direitos reservados</p>
-      <p>&copy;Ita Cerâmicas - 2022</p>
-    </footer>
+    <!-- <section id="sobre">
+      <p>Somos uma empresa que vende pisos cerâmicos de luxo</p>
+      <p>Venha nos conhecer</p>
+    </section> -->
   </body>
+
+  <footer id="footer">
+    <p>Todos os direitos reservados</p>
+    <p>&copy;Ita Cerâmicas - 2022</p>
+  </footer>
 </html>

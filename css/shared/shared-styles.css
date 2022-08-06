@@ -1,0 +1,155 @@
+* {
+  --color-golden: #ac8754;
+  --color-light-gray: rgba(221, 221, 221);
+  --color-light-gray-t: rgba(221, 221, 221, 0.5);
+  --color-gray: #333;
+  --color-dark-gray: #222;
+  --color-dark-gray-t: rgba(34, 34, 34, 0.2);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 0 5px;
+  background-color: var(--color-gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 100px;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+header > nav {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+header > h1 {
+  text-align: left;
+}
+
+#search-bar {
+  width: 100%;
+  display: flex;
+  color: var(--color-dark-gray);
+}
+#search-bar > input {
+  padding: 10px;
+  border: none;
+  background-color: var(--color-light-gray-t);
+  width: 20vw;
+  border-radius: 2px;
+}
+
+#search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+h1 {
+  width: 100%;
+  color: var(--color-golden);
+  font-size: 1.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  width: 100%;
+  color: var(--color-golden);
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+p {
+  color: var(--color-golden);
+}
+
+a {
+  color: var(--color-golden);
+  text-decoration: none;
+}
+.hamburger-nav {
+  display: none;
+  align-items: center;
+  padding: 20px;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  header > nav {
+    display: none;
+  }
+  #search-bar {
+    justify-content: flex-end;
+  }
+  .hamburger-nav {
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  #search-bar {
+    display: none;
+  }
+  .hamburger-nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 1em;
+  }
+}
+
+#navbar-container {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.navbar-items {
+  border-radius: 2px;
+  list-style: none;
+  display: flex;
+  width: 75px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-items:hover {
+  background-color: var(--color-dark-gray-t);
+}
+
+.navbar-items > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-gray);
+}
+
+#sobre {
+  background-color: var(--color-gray);
+}

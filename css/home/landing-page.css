@@ -1,0 +1,85 @@
+.grid-section-pisos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.container-piso {
+  padding: 10px;
+  margin: 10px;
+  border: var(--color-dark-gray-t) solid 1px;
+  border-radius: 5px;
+}
+
+.container-piso:hover {
+  background-color: var(--color-light-gray);
+}
+
+.container-piso:hover .button-comprar {
+  visibility: visible;
+}
+
+.button-comprar {
+  visibility: hidden;
+  border: var(--color-dark-gray) solid 2px;
+  padding: 5px 20px;
+  cursor: pointer;
+  color: var(--color-gray);
+  font-size: 1.2em;
+}
+
+#form-comments {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-gray);
+  color: var(--color-golden);
+}
+
+.form-block > #name,
+#email,
+#message {
+  width: 30vw;
+}
+
+.form-block {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: var(--color-golden) solid 1px;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+label {
+  color: var(--color-golden);
+}
+
+input,
+textarea {
+  color: var(--color-golden);
+  padding: 10px;
+  border: none;
+  background-color: var(--color-light-gray);
+  border-radius: 2px;
+}
+
+#submit-button {
+  border: var(--color-golden) solid 4px;
+  padding: 5px 20px;
+  cursor: pointer;
+  color: var(--color-golden);
+  font-size: 1.2em;
+  background-color: var(--color-dark-gray);
+  border-radius: 2px;
+}
+
+#submit-button:hover {
+  background-color: var(--color-gray);
+}
