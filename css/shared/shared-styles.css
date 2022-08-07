@@ -29,6 +29,7 @@ header > nav {
   display: flex;
   align-items: flex-end;
 }
+
 header > h1 {
   text-align: left;
 }
@@ -38,6 +39,7 @@ header > h1 {
   display: flex;
   color: var(--color-dark-gray);
 }
+
 #search-bar > input {
   padding: 10px;
   border: none;
@@ -78,6 +80,7 @@ a {
   color: var(--color-golden);
   text-decoration: none;
 }
+
 .hamburger-nav {
   display: none;
   align-items: center;
@@ -90,17 +93,21 @@ a {
   header > nav {
     display: none;
   }
+
   #search-bar {
     justify-content: flex-end;
   }
+
   .hamburger-nav {
     display: flex;
   }
 }
+
 @media (max-width: 600px) {
   #search-bar {
     display: none;
   }
+
   .hamburger-nav {
     display: flex;
   }

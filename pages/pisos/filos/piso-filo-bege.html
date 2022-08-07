@@ -4,30 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/styles.css" />
+    <link rel="stylesheet" href="../../../css/home/landing-page.css" />
+    <link rel="stylesheet" href="../../../css/product/product-details.css" />
+    <script
+      src="https://kit.fontawesome.com/7febf00822.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Ita Cerâmicas</title>
   </head>
   <body>
     <header id="header">
       <img
+        id="logo"
         src="../../../img/logos/logo-transparent.png"
         alt="Logo da ita cerâmicas since 2022"
       />
       <h1>Ita Cerâmicas</h1>
-
+      <div id="search-bar">
+        <input type="text" name="search" id="search" placeholder="Pesquisar" />
+        <a id="search-button" href="">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="../../../index.html" target="" rel="">Home</a></li>
-          <li>
-            <a href="../../../index.html#section-pisos" target="" rel=""
-              >Produtos</a
-            >
+        <ul id="navbar-container">
+          <li class="navbar-items">
+            <a href="../../../index.html" rel="">Home</a>
           </li>
-          <li><a href="#sobre" target="" rel="">Sobre</a></li>
-          <li><a href="#footer" target="" rel="">Contato</a></li>
+          <li class="navbar-items">
+            <a href="../../../index.html#section-pisos" rel="">Produtos</a>
+          </li>
+          <li class="navbar-items">
+            <a href="#footer" rel="">Sobre</a>
+          </li>
+          <li class="navbar-items">
+            <a href="#footer" rel="">Contato</a>
+          </li>
         </ul>
       </nav>
+      <a class="hamburger-nav" href="">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </header>
-    <hr />
 
     <main>
       <section id="container-product">
@@ -92,23 +111,23 @@
       <section id="detailed-description-product">
         <p><strong>Características:</strong></p>
         <ul>
-          <li>Fabricante: Ita Cerâmicas</li>
-          <li>Modelo: PFBE2407</li>
+          <li><p>Fabricante: Ita Cerâmicas</p></li>
+          <li><p>Modelo: PFBE2407</p></li>
         </ul>
 
-        <p><strong>Especificações</strong></p>
+        <p><strong>Especificações:</strong></p>
         <ul>
-          <li>Dimensões: 120 x 120 x 2 cm</li>
-          <li>Peso liquído: 5 kg</li>
-          <li>Tipo da arte: Filo</li>
-          <li>Cor da arte: Bege</li>
+          <li><p>Dimensões: 120 x 120 x 2 cm</p></li>
+          <li><p>Peso liquído: 5 kg</p></li>
+          <li><p>Tipo da arte: Filo</p></li>
+          <li><p>Cor da arte: Bege</p></li>
         </ul>
 
         <p><strong>Conteúdo da embalagem:</strong></p>
         <ul>
-          <li>1 unidade do piso Filo Bege, 120cm x 120cm x 2cm</li>
-          <li>Plástico inflado para proteção na viagem</li>
-          <li>Caixa de papelão</li>
+          <li><p>1 unidade do piso Filo Bege, 120cm x 120cm x 2cm</p></li>
+          <li><p>Plástico inflado para proteção na viagem</p></li>
+          <li><p>Caixa de papelão</p></li>
         </ul>
       </section>
       <hr />
@@ -123,18 +142,46 @@
       </section>
     </main>
 
-    <hr />
-
-    <section id="sobre">
-      <p>
-        Somos uma empresa que vende pisos cerâmicos de luxo, venha nos conhecer
-      </p>
-    </section>
-
-    <hr />
-
-    <section><h2>Avaliações</h2></section>
     <footer id="footer">
+      <a href="#header" id="scroll-up-button">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+      </a>
+
+      <form
+        id="form-comments"
+        action="mailto:ericlesdsantos@gmail.com"
+        method="POST"
+        name="EmailForm"
+      >
+        <div class="form-block">
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <div class="form-block">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-block">
+          <label for="message">Mensagem:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" id="submit-button">Enviar</button>
+      </form>
+
       <p>Todos os direitos reservados</p>
       <p>&copy;Ita Cerâmicas - 2022</p>
     </footer>
